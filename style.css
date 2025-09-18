@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    font-family: "DM Sans", sans-serif;
+}
+
+/* HEADER        */
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+}
+
+.header-left-side{
+    display: flex;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    padding: 16px 0px 16px 20px;
+}
+
+nav{
+    display: none;
+    gap: 32px;
+    padding-left: 40px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d1e20;
+}
+
+.nav-item__show-more-icon{
+    display: flex;
+    height: 26px;
+    color: #1d1e20;
+    padding-top: 2px;
+}
+
+.header-right-side{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    gap: 30px;
+}
+
+.language-selector{
+    display: none;
+    align-items: center;
+    gap: 2px
+}
+
+.language-selector span{
+    font-weight: 700;
+    font-size: 16px;
+    color:#1d1e20;
+}
+
+.language-selector img{
+    height: 24px;
+    padding: 2px;
+}
+
+.account-button{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 48px;
+    font-weight: 700;
+    color:#1d1e20;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.menu-button{
+    display: flex;
+    height: 24px;
+    color: black;
+}
+
+@media screen and (min-width: 1140px){
+    header{
+        height: 88px;
+    }
+    .logo-container{
+        padding: 29px 0px 29px 40px;
+    }
+    nav{
+        display: flex;
+    }
+    .header-right-side{
+        padding-right: 40px;
+    }
+    .language-selector{
+        display: flex;
+    }
+    .account-button{
+        display: flex;
+    }
+    .menu-button{
+        display: none;
+    }
+}
+
+
+/* HERO */
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    padding: 14px 16px 36px;
+    gap: 8px;
+}
+
+.hero-container p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero-container p span{
+    color: #673de6;
+}
+
+.hero-list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 4px;
+}
+
+.hero-list-item{
+    display: flex;
+    gap: 10px;
+}
+
+.hero-list-item-icon-check{
+    display: flex;
+    width: 24px;
+    color: rgb(24, 165, 24);
+}
+
+.hero-list-item-icon-question{
+    display: flex;
+    width: 16px;
+}
+
+.hero-get-started-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.hero-get-started-button{
+    width: 100%;
+    background-color: #673de6;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 47px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero-image img{
+    max-width: 100%;
+    padding: 0 16px;
+}
+
+.guarantee-text-container{
+    display: flex;
+    gap: 5px;
+}
+
+.guarantee-icon{
+    display: flex;
+    width: 16px;
+}
+
+@media screen and (min-width: 560px){
+    .hero-container{
+        width: 544px;
+    }
+    .hero-image img{
+        max-width: 544px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hero-section{
+        align-items: flex-start;
+        padding: 62px 40px 80px;
+    }
+    .hero-container{
+        width: auto;
+    }
+    .hero-get-started-button-container{
+        align-items: flex-start;
+    }
+    .hero-get-started-button{
+        width: 186.42px;
+    }
+    .hero-image img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 780px){
+    .hero-section{
+        align-items: center;
+    }
+    .hero-container{
+        width: 684px;
+    }
+    .hero-image img{
+        max-width: 684px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .hero-section{
+        flex-direction: row;
+        padding: 36px 40px 96px;
+        gap: 12px;
+    }
+    .hero-container{
+        padding: 0;
+    }
+    .hero-container p{
+        font-size: 20px;
+        width: 440px;
+    }
+    .hero-container h1{
+        font-size: 36px;
+    }
+    .hero-image img{
+        padding: 0;
+        max-width: 616px;
+    }
+}
+
+@media screen and (min-width: 1367px){
+    .hero-section{
+        padding: 36px 80px 96px;
+    }
+    .hero-image img{
+        max-width: 880px;
+    }
+}
+
+@media screen and (min-width: 1485px){
+    .hero-section{
+        width: 1405px;
+    }
+    .hero-image img{
+        max-width: 880px;
+    }
+}
+
+
+/* CARDS SECTION */
+.cards-section{
+    display: flex;
+    justify-content: center;
+    background-color: #1f1346;
+}
+
+.cards-section-container{
+    background-color: #1f1346;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 16px;
+}
+
+.cards-section__description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cards-section__description h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-section__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-section__card{
+    background-color: #2f1c6a;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 32px;
+}
+
+.card-section__card__icon{
+    height: 40px;
+    width: 40px;
+    background-color: #673ed6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card-section__card__icon svg{
+    height: 24px;
+}
+
+.card-section__card__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.get-started-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 186px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color:#673ed6;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 540px){
+    .cards-section-container{
+        width: 540px;
+    }
+    .cards-section__description h3{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cards-section-container{
+        width: 768px;
+    }
+    .cards-section__description h3{
+        font-size: 28px;
+    }
+    .card-section__cards{
+        gap: 22px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .cards-section-container{
+        width:auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .card-section__cards{
+        flex-direction: row;
+    }
+    .cards-section__description h3{
+        font-size: 36px;
+    }
+    .card-section__card{
+        height: 280px;
+        flex: 1
+    }
+}
+
+@media screen and (min-width: 1208px) {
+    .cards-section-container{
+        width:1208px;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    padding: 0px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f5ff;
+}
+
+footer .logo-container{
+    padding: 0px;
+}
+
+.social-media-icons-container{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.social-media-icon{
+    display: flex;
+    width: 32px;
+}
+
+.privacy-policy-links{
+    display: flex;
+    gap: 20px;
+    height: 40px;
+}
+
+.privacy-policy-links a{
+    color: black;
+    font-size: 14px;
+}
+
+.payments-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px
+}
+
+.payments-container a{
+    color:#673de6;
+    font-weight: 600;
+}
+
+.payment-image{
+    max-width: 60px;
+    border: 1px solid rgb(224, 225, 230);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.055);
+}
+
+.copyright-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copyright-container p{
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px){
+    .social-media-icons-container{
+        width: 553px;
+    }
+    .social-media-icons{
+        display: flex;
+        align-items: center;
+    }
+}
