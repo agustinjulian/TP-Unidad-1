@@ -485,5 +485,8 @@ footer .logo-container{
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-
+    .social-media-icons-container{
+        justify-content: center;
+        
+    }
 }
