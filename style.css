@@ -46,6 +46,10 @@ nav{
     color: #1d1e20;
 }
 
+.nav-item h2:hover{
+    color: #5a5b5f;
+}
+
 .nav-item__show-more-icon{
     display: flex;
     height: 26px;
@@ -89,6 +93,11 @@ nav{
     background: transparent;
     border: 1px solid black;
     border-radius: 8px;
+}
+
+.account-button:hover{
+    color: #5a5b5f;
+    border: 1px solid #c8c9cc;
 }
 
 .menu-button{
@@ -176,15 +185,21 @@ nav{
     align-items: center;
     padding-top: 10px;
 }
+
 .hero-get-started-button{
     width: 100%;
     background-color: #673de6;
+    transition: background-color 0.2s ease;
     color: white;
     font-size: 16px;
     font-weight: 700;
     padding: 13px 47px;
     text-align: center;
     border-radius: 8px;
+}
+
+.hero-get-started-button:hover{
+    background-color: rgb(72, 30, 199);
 }
 
 .hero-image img{
@@ -359,8 +374,13 @@ nav{
     font-size: 16px;
     font-weight: 600;
     background-color:#673ed6;
+    transition: background-color 0.2s ease;
     color: white;
     border-radius: 10px;
+}
+
+.get-started-button:hover{
+    background-color: rgb(72, 30, 199);
 }
 
 @media screen and (min-width: 540px){
@@ -443,6 +463,12 @@ footer .logo-container{
 .social-media-icon{
     display: flex;
     width: 32px;
+    color: #1d1e20;
+    transition: color 0.3s ease;
+}
+
+.social-media-icon:hover{
+    color: rgb(97, 97, 97);
 }
 
 .privacy-policy-links{
@@ -501,6 +527,10 @@ footer .logo-container{
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+.ask-kodee:hover{
+    background-color: rgb(72, 30, 199);
 }
 
 @media screen and (min-width: 600px){
